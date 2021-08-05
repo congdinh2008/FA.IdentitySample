@@ -3,3 +3,7 @@
 ################################################################################
 
 /src/FA.IdentitySample/.vs/FA.IdentitySample
+/src/FA.IdentitySample/FA.IdentitySample.WebMVC/bin
+/src/FA.IdentitySample/FA.IdentitySample.WebMVC/obj/Debug
+/src/FA.IdentitySample/packages/EntityFramework.6.4.4
+/src/FA.IdentitySample/packages
