@@ -21,7 +21,7 @@ namespace FA.IdentitySample.WebMVC.Models
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     {
         public ApplicationDbContext()
-            : base("DefaultConnection", throwIfV1Schema: false)
+            : base("IdentitySampleConn", throwIfV1Schema: false)
         {
         }
 
