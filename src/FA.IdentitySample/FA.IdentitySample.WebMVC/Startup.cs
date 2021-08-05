@@ -1,8 +1,6 @@
-﻿using Microsoft.Owin;
-using Owin;
+﻿using Owin;
 
-[assembly: OwinStartupAttribute(typeof(FA.IdentitySample.WebMVC.Startup))]
-namespace FA.IdentitySample.WebMVC
+namespace IdentitySample
 {
     public partial class Startup
     {

@@ -1,7 +1,6 @@
-﻿using System.Web;
-using System.Web.Mvc;
+﻿using System.Web.Mvc;
 
-namespace FA.IdentitySample.WebMVC
+namespace IdentitySample
 {
     public class FilterConfig
     {
