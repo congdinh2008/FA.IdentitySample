@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FA.IdentitySample.WebMVC", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FA.IdentitySample.WebMVCWithNuget", "FA.IdentitySample.WebMVCWithNuget\FA.IdentitySample.WebMVCWithNuget.csproj", "{FC3B65F3-7DE4-4538-85ED-A4BF4EC9242E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FA.IdentitySample.MVCWeb", "FA.IdentitySample.MVCWeb\FA.IdentitySample.MVCWeb.csproj", "{ECBA13AB-65E8-4E99-95C7-2901CD17ECA4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{FC3B65F3-7DE4-4538-85ED-A4BF4EC9242E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FC3B65F3-7DE4-4538-85ED-A4BF4EC9242E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FC3B65F3-7DE4-4538-85ED-A4BF4EC9242E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ECBA13AB-65E8-4E99-95C7-2901CD17ECA4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ECBA13AB-65E8-4E99-95C7-2901CD17ECA4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ECBA13AB-65E8-4E99-95C7-2901CD17ECA4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ECBA13AB-65E8-4E99-95C7-2901CD17ECA4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
