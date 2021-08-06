@@ -1,3 +1,4 @@
+using FA.IdentitySample.Models.Common;
 using FA.IdentitySample.MVCWeb.Models;
 using FA.IdentitySample.MVCWeb.ViewModels;
 using Microsoft.AspNet.Identity;
@@ -365,7 +366,7 @@ namespace FA.IdentitySample.MVCWeb.Controllers
             }
         }
 
-        private async Task SignInAsync(ApplicationUser user, bool isPersistent)
+        private async Task SignInAsync(User user, bool isPersistent)
         {
             AuthenticationManager.SignOut(DefaultAuthenticationTypes.ExternalCookie, DefaultAuthenticationTypes.TwoFactorCookie);
             AuthenticationManager.SignIn(new AuthenticationProperties { IsPersistent = isPersistent }, await user.GenerateUserIdentityAsync(UserManager));

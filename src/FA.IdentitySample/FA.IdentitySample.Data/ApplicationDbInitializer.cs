@@ -1,26 +1,25 @@
+using FA.IdentitySample.Models.Common;
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.EntityFramework;
-using Microsoft.AspNet.Identity.Owin;
 using System.Data.Entity;
-using System.Web;
 
 namespace FA.IdentitySample.MVCWeb.Models
 {
     // This is useful if you do not want to tear down the database each time you run the application.
     // public class ApplicationDbInitializer : DropCreateDatabaseAlways<ApplicationDbContext>
     // This example shows you how to create a new database if the Model changes
-    public class ApplicationDbInitializer : DropCreateDatabaseIfModelChanges<ApplicationDbContext>
+    public class ApplicationDbInitializer : DropCreateDatabaseIfModelChanges<MVCWebDbContext>
     {
-        protected override void Seed(ApplicationDbContext context)
+        protected override void Seed(MVCWebDbContext context)
         {
             InitializeIdentity(context);
             base.Seed(context);
         }
 
         //Create User=Admin@Admin.com with password=Admin@123456 in the Admin role        
-        public static void InitializeIdentity(ApplicationDbContext db)
+        public static void InitializeIdentity(MVCWebDbContext db)
         {
-            var userManager = new UserManager<ApplicationUser>(new UserStore<ApplicationUser>(db));
+            var userManager = new UserManager<User>(new UserStore<User>(db));
             var roleManager = new RoleManager<IdentityRole>(new RoleStore<IdentityRole>(db));
             const string name = "admin@example.com";
             const string password = "Admin@123456";
@@ -37,7 +36,7 @@ namespace FA.IdentitySample.MVCWeb.Models
             var user = userManager.FindByName(name);
             if (user == null)
             {
-                user = new ApplicationUser { UserName = name, Email = name };
+                user = new User { UserName = name, Email = name };
                 var result = userManager.Create(user, password);
                 result = userManager.SetLockoutEnabled(user.Id, false);
             }

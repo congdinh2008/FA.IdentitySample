@@ -9,6 +9,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FA.IdentitySample.WebMVCWit
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FA.IdentitySample.MVCWeb", "FA.IdentitySample.MVCWeb\FA.IdentitySample.MVCWeb.csproj", "{ECBA13AB-65E8-4E99-95C7-2901CD17ECA4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FA.IdentitySample.Models", "FA.IdentitySample.Models\FA.IdentitySample.Models.csproj", "{2F530DE5-F450-408C-B2D7-5ADAA93BC185}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FA.IdentitySample.Data", "FA.IdentitySample.Data\FA.IdentitySample.Data.csproj", "{6EBA2537-17D6-4812-9CC6-AAC69CB0A83F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +31,14 @@ Global
 		{ECBA13AB-65E8-4E99-95C7-2901CD17ECA4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{ECBA13AB-65E8-4E99-95C7-2901CD17ECA4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{ECBA13AB-65E8-4E99-95C7-2901CD17ECA4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2F530DE5-F450-408C-B2D7-5ADAA93BC185}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2F530DE5-F450-408C-B2D7-5ADAA93BC185}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2F530DE5-F450-408C-B2D7-5ADAA93BC185}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2F530DE5-F450-408C-B2D7-5ADAA93BC185}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6EBA2537-17D6-4812-9CC6-AAC69CB0A83F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6EBA2537-17D6-4812-9CC6-AAC69CB0A83F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6EBA2537-17D6-4812-9CC6-AAC69CB0A83F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6EBA2537-17D6-4812-9CC6-AAC69CB0A83F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

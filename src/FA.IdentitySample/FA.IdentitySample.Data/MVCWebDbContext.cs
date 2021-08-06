@@ -1,25 +1,26 @@
 using System.Data.Entity;
+using FA.IdentitySample.Models.Common;
 using Microsoft.AspNet.Identity.EntityFramework;
 
 namespace FA.IdentitySample.MVCWeb.Models
 {
-    public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
+    public class MVCWebDbContext : IdentityDbContext<User>
     {
-        public ApplicationDbContext()
+        public MVCWebDbContext()
             : base("AspNetIdentityConnection", throwIfV1Schema: false)
         {
         }
 
-        static ApplicationDbContext()
+        static MVCWebDbContext()
         {
             // Set the database initializer which is run once during application start
             // This seeds the database with admin user credentials and admin role
-            Database.SetInitializer<ApplicationDbContext>(new ApplicationDbInitializer());
+            Database.SetInitializer<MVCWebDbContext>(new ApplicationDbInitializer());
         }
 
-        public static ApplicationDbContext Create()
+        public static MVCWebDbContext Create()
         {
-            return new ApplicationDbContext();
+            return new MVCWebDbContext();
         }
     }
 }

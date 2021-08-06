@@ -1,3 +1,4 @@
+using FA.IdentitySample.Models.Common;
 using FA.IdentitySample.MVCWeb.Areas.Identity.ViewModels;
 using FA.IdentitySample.MVCWeb.Models;
 using FA.IdentitySample.MVCWeb.ViewModels;
@@ -92,7 +93,7 @@ namespace FA.IdentitySample.MVCWeb.Areas.Identity.Controllers
         {
             if (ModelState.IsValid)
             {
-                var user = new ApplicationUser { UserName = userViewModel.Email, Email = userViewModel.Email };
+                var user = new User { UserName = userViewModel.Email, Email = userViewModel.Email };
                 var adminresult = await UserManager.CreateAsync(user, userViewModel.Password);
 
                 //Add User to the selected Roles 
